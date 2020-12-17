@@ -1,0 +1,1 @@
+/home/eluinex/terra/aws_terraform_python_flask_app_root/terraform_aws_config_elluis_blog/example.tf
