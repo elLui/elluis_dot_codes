@@ -1,0 +1,135 @@
+
+@import url('fonts.css');
+
+
+
+/*--------------------------------------- general body ---------------------------------------*/
+html, body{
+
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #551d63;
+
+}
+
+:root{
+
+    /* theme colors */
+
+    /* test color */
+    --test-gray: #3f4054;
+
+    /* font them taken from https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c */
+    /* Rich Black FOGRA 29 */
+    --vivid-blak: #011627;
+    --baby-powder: #fdfffc;
+    --tiffany-blue: #2EC4B6;
+    --rose-matter: #E71D36;
+    --orange-peel: #FF9F1C;
+
+
+
+
+
+
+
+    /* font family-variables - these variable will allow us to just use the font name instead of having
+    to write in the fallback font(s) everytime we need it */
+    /* imported from google fonts */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Lexand_Giga: 'Lexand_Giga';
+    --Livvic: 'Livvic', cursive;
+    --Poppins: 'Poppins', cursive;
+}
+
+
+
+/*-------------------X------------------- /general body -------------------X-------------------*/
+
+
+
+
+
+
+
+/*--------------------------------------- global classes ---------------------------------------*/
+
+/*-- removes all text formatting from all anchor tags 
+-- most notably will remove the line under the hyperlink --*/
+a{
+    text-decoration: none;
+    color: var(--test-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row ;
+    /*  */
+    flex-wrap: wrap;
+}
+
+ul{
+    display: flex ;
+}
+
+/*-------------------X------------------- /global classes -------------------X-------------------*/
+
+/*--------------------------------------- nav bar ---------------------------------------*/
+
+/*-- nav bar placement and collapse config --*/
+.nav{
+    /* background color */
+    background: white;
+
+    /* 0 for top and bottom padding */
+    /* 2rem for left and right padding */
+    padding: 0 2rem;
+
+
+    /* this helps toggle the menu collapse */
+    height: 0rem;
+
+    /* 10 view port height */
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    list-style-type: none;
+}
+
+.nav .nav-items .nav-link{
+    /* add padding and position center menu links */
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+  
+/*-- nav bar and brand font config --*/
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    /* 1rem to top & bottom -- 0rem for left and right */
+    padding: 1rem 0;
+
+    /* will activate the padding around the brand name */
+    display: block;
+
+    /* after importing google fonts and linking all folders 
+    correctly we can use start using our imported fonts */
+    font-family: var(--Lexand_Giga);
+
+}
+
+.nav .social{
+
+    /* padding for social icons */
+    padding: 1.4rem 0;
+}
+
+/*-------------------X------------------- /nav bar -------------------X-------------------*/
